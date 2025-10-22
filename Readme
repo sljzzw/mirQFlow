@@ -1,1 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 mirQFlow: An Open Platform for Pediatric 2D and 4D Flow MRI Quantification
+
+This software supports the IPR 2026 Shark Tank. Feedback is welcome, and we hope you enjoy using it.
+The current version is MATLAB-based, with a Python version planned for ~2027.
+
+
+* Getting Started
+1. Prerequisites
+
+To run mirQFlow, ensure that MATLAB Runtime R2024b is installed.
+
+To check its location, open MATLAB and type:
+
+>> mcrinstaller
+
+
+Note: Administrator rights are required to run the installer.
+
+Alternatively, download and install the Windows version of MATLAB Runtime R2024b directly from MathWorks: https://www.mathworks.com/products/compiler/mcr/index.html
+
+
+2. Files to Deploy
+
+To run mirQFlow standalone, package the following files:
+
+mirQFlow.exe
+
+MCRInstaller.exe
+
+If you are unable to install MATLAB Runtime via the instructions above, contact the author directly.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+### mirQFlow: An Open Platform for Pediatric 2D and 4D Flow MRI Quantification
+The Problem
+While 2D and 4D Flow MRI have revolutionized cardiovascular imaging by enabling quantitative assessment of hemodynamics, most existing analysis platforms remain commercial, closed-source, and tailored to adult cardiovascular anatomy. Pediatric imaging presents fundamentally different challenges: smaller vessel calibers, higher cardiac rates, increased susceptibility to motion artifacts, and highly variable congenital morphologies. These factors necessitate dedicated algorithms, visualization strategies, and validation frameworks specifically designed for pediatric populations. However, current software tools lack such specialization, leaving a significant gap in quantitative flow assessment and clinical decision support for pediatric cardiovascular care.
+
+Our Solution
+mirQFlow is an open, purpose-built computational platform developed specifically for pediatric 2D and 4D Flow MRI analysis (https://github.com/sljzzw/mirQFlow). It transforms standard or advanced DICOM-based MRI acquisitions into quantitative, clinically interpretable hemodynamic metrics, using pediatric-optimized algorithms, physics- and physiology- informed AI models, and interactive 3D visualization tools that help clinicians better understand complex cardiovascular physiology.
+Unlike closed commercial systems, mirQFlow offers an open, extensible, and cost-efficient platform for advanced flow quantification. It features fully automated quality control and supports both CPU- and GPU-accelerated computation, enabling efficient, high-performance, data-driven hemodynamic analysis. By democratizing access to state-of-the-art quantitative flow imaging, mirQFlow bridges the gap between computational innovation and equitable pediatric cardiovascular care.
+
+What Makes Us Different
+1. Pediatric-first algorithms: mirQFlow is specifically designed for the unique challenges of pediatric cardiovascular imaging. Its algorithms account for smaller vessel diameters, higher heart rates, and the highly variable geometries associated with congenital heart disease, ensuring accurate flow quantification across diverse patient anatomies.
+2. Adaptive preprocessing: The platform implements heart-rate–aware temporal resampling, vessel-focused segmentation, and templates tailored to congenital anatomies. These steps optimize spatial and temporal alignment, minimize motion artifacts, and preserve critical flow features that are often lost with adult-focused pipelines.
+3. Next-generation analysis: mirQFlow combines physics-, physiology-, and hemodynamics-informed models with unsupervised AI to achieve sub-voxel accuracy in velocity and pressure estimation. Importantly, this data-driven approach does not rely on pre-trained datasets, allowing robust analysis across patient populations and imaging systems.
+4. Quantitative Analysis and Intuitive visualization: our software provides quantitative analysis and interactive 3D vector field visualization, and customizable streamline rendering. These tools facilitate rapid comprehension of complex flow patterns, enabling clinicians to interpret hemodynamic abnormalities with precision and confidence.
+5. Built-in quality control: Automated QC pipelines include standardized metrics, reproducibility tracking, and residual error mapping. These features ensure analytical robustness, enhance clinical reliability, and support multi-center benchmarking and collaborative research.
+
+Clinical and Research Impact
+By merging physics-based rigor with AI-driven automation and pediatric-specific design, mirQFlow democratizes advanced flow quantification for congenital heart disease. It reduces dependence on costly proprietary solutions, lowers barriers for global research collaboration, and makes cutting-edge analysis accessible to both large academic hospitals and under-resourced clinics.
+
+Members of the Team
+Zhongwei Zhang, MD, PhD
+Scott Bugenhagen, MD, PhD
+Manish Aggarwal, MD
+Sanjeev Bhalla, MD
+Pamela Woodard, MD
+
+
+Contact: Zhongwei Zhang, MD, PhD
+Email: zhongweiz@wustl.edu
+
+Mallinckrodt Institute of Radiology, Washington University School of Medicine, St. Louis, USA
